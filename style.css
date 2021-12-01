@@ -15,7 +15,6 @@ a {
 body {
   font-family: 'Montserrat', sans-serif;
   color: #000;
-  background-color: #000;
 }
 ul {
   list-style: none;
@@ -27,23 +26,10 @@ img {
   display: block;
   max-width: 100%;
 }
-
-/*---------- ESTRUTURA ----------*/
-.estrutura {
-  display: grid;
-  grid-template-columns: 1fr 3fr 2fr;
-  grid-template-areas:
-    'sidenav sidenav sidenav'
-    'introducao introducao introducao'
-    'content content content'
-    'footer footer footer';
-}
-
 /*---------- SIDENAV ----------*/
 .sidenav {
-  grid-area: sidenav;
   width: 100%;
-  height: 100px;
+  height: auto;
   background-color: #fff;
   display: flex;
   justify-content: space-around;
@@ -74,4 +60,73 @@ img {
 .sidenavSeletores a:hover {
   color: #000;
   -webkit-text-stroke-width: 2px; /*Altera a largura do tracejado das linhas*/
+}
+/*---------- Introdução ----------*/
+.introducao {
+  background-image: url(images/laranja\ azul\ recorte.png);
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+.introducao h1{
+  padding: 30px;
+  font-size: 4em;
+}
+.introducao p{
+  padding-left: 30px;
+  margin-top: 20px;
+  font-size: 2em;
+}
+/* Content */
+.conjuntoImagens{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+    align-content: center;
+    padding: 30px;
+}
+.img{
+  width: 23%;
+}
+.conjuntoImagens div{
+margin-top: 30px;
+}
+/* Footer */
+.footer{
+  background-color: #F6F6F6;
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer nav{
+margin: 30px 0 60px 45px;
+}
+.footer ul{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+.footer li + li{
+  padding-left:30px ;
+}
+.copyright{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+.copyright{
+  display: inline-flex;
+  flex-direction: row;
+    align-items: center;
+}
+.copyright nav{
+  padding-top: 30px;
+  font-size: 13px;
 }
