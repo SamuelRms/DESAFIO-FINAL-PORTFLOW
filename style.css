@@ -13,7 +13,7 @@ a {
   padding: 0px;
 }
 body {
-  font-family: 'Montserrat' Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #000;
   background-color: #000;
 }
@@ -55,23 +55,23 @@ img {
 .logo {
   font-size: 2em;
   padding: 10px;
-
+  color: #000;
 }
-.sidenavSeletores{
+.sidenavSeletores {
   display: block;
 }
 .sidenavSeletores ul {
   display: flex;
   flex-wrap: wrap;
 }
+
 .sidenavSeletores li a {
-  color: #c7c7c7;    
-  font-size: 1.25em;
+  color: #c7c7c7;
+  font-size: 1.5em;
   display: block;
   padding: 10px;
 }
 .sidenavSeletores a:hover {
   color: #000;
+  -webkit-text-stroke-width: 2px; /*Altera a largura do tracejado das linhas*/
 }
-
-
