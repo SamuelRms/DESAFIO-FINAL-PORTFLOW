@@ -13,8 +13,9 @@ a {
   padding: 0px;
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat' Arial, Helvetica, sans-serif;
   color: #000;
+  background-color: #000;
 }
 ul {
   list-style: none;
@@ -27,4 +28,50 @@ img {
   max-width: 100%;
 }
 
-/*---------- HEADER ----------*/
+/*---------- ESTRUTURA ----------*/
+.estrutura {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  grid-template-areas:
+    'sidenav sidenav sidenav'
+    'introducao introducao introducao'
+    'content content content'
+    'footer footer footer';
+}
+
+/*---------- SIDENAV ----------*/
+.sidenav {
+  grid-area: sidenav;
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  margin: 0 auto;
+}
+.logo {
+  font-size: 2em;
+  padding: 10px;
+
+}
+.sidenavSeletores{
+  display: block;
+}
+.sidenavSeletores ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sidenavSeletores li a {
+  color: #c7c7c7;    
+  font-size: 1.25em;
+  display: block;
+  padding: 10px;
+}
+.sidenavSeletores a:hover {
+  color: #000;
+}
+
+
